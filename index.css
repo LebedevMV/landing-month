@@ -1,4 +1,4 @@
-@import "./vendor/fonts/_fonts.css";
+@import url(/Users/maksim.lebedev/Documents/Front/landing-month/vendor/fonts/fonts.css);
 .page {
   min-width: 320px;
   font-family: "Noto Sans", Arial, sans-serif;
@@ -14,20 +14,33 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
+
 .page__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header {
   background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1120px;
   padding: 0 calc((100% - 1120px)/2);
   margin: 28px auto 60px;
 }
+
 .header__join {
   font-family: "Noto Sans", Arial, sans-serif;
   font-weight: normal;
@@ -40,9 +53,11 @@
   font-size: 15px;
   margin: 0 0 0 660px;
 }
+
 .header__join-arrow {
   margin: 0 0 0 13px;
 }
+
 .header__register {
   font-family: "Noto Sans", Arial, sans-serif;
   font-weight: normal;
@@ -63,20 +78,27 @@
   max-width: 1120px;
   padding: 0 calc((100% - 1120px)/2) 78px;
   margin: 0 auto;
-  box-shadow: 0 2px 0 #fff;
+  -webkit-box-shadow: 0 2px 0 #fff;
+          box-shadow: 0 2px 0 #fff;
   overflow: hidden;
   position: relative;
 }
+
 .intro__tag {
   background-color: #5036E6;
   border-radius: 0px 30px 30px 0px;
   max-width: 84px;
   min-height: 50px;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
 }
+
 .intro__tag-text {
   font-family: "Noto Sans", Arial, sans-serif;
   font-weight: normal;
@@ -84,6 +106,7 @@
   text-decoration: none;
   margin: 0 0 0 18px;
 }
+
 .intro__title {
   font-family: "Noto Sans", Arial, sans-serif;
   color: #FFF;
@@ -95,6 +118,7 @@
   max-width: 476px;
   margin: 70px 0 40px;
 }
+
 .intro__description {
   font-family: "Noto Sans", Arial, sans-serif;
   color: #FFF;
@@ -106,6 +130,7 @@
   max-width: 500px;
   margin: 0 0 182px;
 }
+
 .intro__board {
   margin: 0;
   background-image: url("../../images/board.png");
@@ -113,6 +138,7 @@
   width: 416px;
   height: 104px;
 }
+
 .intro__branding {
   background-image: url("../../images/chess_desctop.png");
   width: 640px;
@@ -130,6 +156,7 @@
   margin: 2px auto 0;
   overflow: auto;
 }
+
 .team__title {
   font-family: "Noto Sans", Arial, sans-serif;
   color: #FFF;
@@ -141,6 +168,7 @@
   max-width: 476px;
   margin: 80px 0 40px;
 }
+
 .team__description {
   font-family: "Noto Sans", Arial, sans-serif;
   color: #FFF;
@@ -152,16 +180,21 @@
   max-width: 500px;
   margin: 0 0 110px;
 }
+
 .team__cards {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 80px;
   margin: 0;
 }
+
 .team__card {
   max-width: 320px;
   margin: 0;
 }
+
 .team__name {
   font-family: "Noto Sans", Arial, sans-serif;
   font-weight: normal;
@@ -175,6 +208,7 @@
   max-width: 320px;
   margin: 30px 0 10px;
 }
+
 .team__bio {
   max-width: 320px;
   margin: 0;
@@ -189,18 +223,29 @@
 
 .join {
   background-color: #5036E6;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1120px;
   padding: 0 calc((100% - 1120px) / 2);
   margin: 0 auto;
-  box-shadow: 0 2px 0 #fff;
+  -webkit-box-shadow: 0 2px 0 #fff;
+          box-shadow: 0 2px 0 #fff;
   overflow: auto;
   min-height: 500px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
+
 .join__title {
   font-family: "Noto Sans", Arial, sans-serif;
   color: #FFF;
@@ -212,6 +257,7 @@
   max-width: 520px;
   margin: 171px 0 40px;
 }
+
 .join__description {
   font-family: "Noto Sans", Arial, sans-serif;
   color: #FFF;
@@ -223,6 +269,7 @@
   max-width: 520px;
   margin: 0 0 171px;
 }
+
 .join__branding {
   background-image: url("../../images/team-invite-desctop.png");
   width: 880px;
@@ -238,11 +285,18 @@
   max-width: 1120px;
   padding: 0 calc((100% - 1120px)/2) 78px;
   margin: 2px 0 auto;
-  box-shadow: 0 2px 0 #fff;
+  -webkit-box-shadow: 0 2px 0 #fff;
+          box-shadow: 0 2px 0 #fff;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .battles__title {
   font-family: "Noto Sans", Arial, sans-serif;
   color: #FFF;
@@ -254,6 +308,7 @@
   max-width: 476px;
   margin: 70px 0 40px;
 }
+
 .battles__description {
   font-family: "Noto Sans", Arial, sans-serif;
   color: #FFF;
@@ -265,18 +320,23 @@
   max-width: 500px;
   margin: 0 0 110px;
 }
+
 .battles__gallery {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 80px;
   margin: 0;
 }
+
 .battles__image {
   width: 320px;
   height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .battles__board {
   margin: 110px 0 0 calc(100% - 416px);
   background-image: url("../../images/board-green.png");
@@ -284,6 +344,7 @@
   width: 416px;
   height: 104px;
 }
+
 .battles__branding {
   background-image: url("../../images/battles-desctop.png");
   width: 440px;
@@ -296,17 +357,27 @@
 
 .footer {
   background-color: #5036E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1120px;
   padding: 0 calc((100% - 1120px) / 2);
   margin: 0 auto;
-  box-shadow: 0 2px 0 #fff;
+  -webkit-box-shadow: 0 2px 0 #fff;
+          box-shadow: 0 2px 0 #fff;
 }
+
 .footer__logo {
   margin: 80px auto 60px;
 }
+
 .footer__register {
   font-family: "Noto Sans", Arial, sans-serif;
   font-weight: normal;
@@ -321,6 +392,7 @@
   border-radius: 8px;
   margin: 0 auto 60px;
 }
+
 .footer__description {
   font-family: "Noto Sans", Arial, sans-serif;
   font-weight: normal;
@@ -333,6 +405,7 @@
   text-align: center;
   margin: 0 auto 20px;
 }
+
 .footer__copyright {
   font-family: "Noto Sans", Arial, sans-serif;
   font-weight: normal;
@@ -344,4 +417,143 @@
   line-height: 20px;
   text-align: center;
   margin: 0 auto 60px;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.pop-up {
+  background-color: #000000;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pop-up_is-closed {
+  display: none;
+}
+
+.pop-up__close {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.pop-up__container {
+  max-width: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin: 120px auto;
+}
+
+.pop-up__logo {
+  margin: 0 auto 50px;
+}
+
+.pop-up__title {
+  margin: 0 auto 78px;
+  font-family: "Noto Sans", Arial, sans-serif;
+  font-weight: normal;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 90%;
+}
+
+.pop-up__main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pop-up__input-container {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto 253px;
+}
+
+.pop-up__item {
+  background-color: #1A1A1A;
+  border: none;
+  border-radius: 8px;
+  height: 48px;
+  width: 500px;
+  margin: 0;
+  padding: 15px 28px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFF;
+}
+
+.pop-up__item::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+.pop-up__item:-ms-input-placeholder {
+  color: #FFF;
+}
+
+.pop-up__item::-ms-input-placeholder {
+  color: #FFF;
+}
+
+.pop-up__item::placeholder {
+  color: #FFF;
+}
+
+.pop-up__item::-ms-input-placeholder {
+  color: #FFF;
+}
+
+.pop-up__item_el_name {
+  margin-bottom: 20px;
+}
+
+.pop-up__submit {
+  font-family: "Noto Sans", Arial, sans-serif;
+  font-weight: normal;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #009465;
+  border: none;
+  height: 48px;
+  width: 218px;
+  border-radius: 8px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */
