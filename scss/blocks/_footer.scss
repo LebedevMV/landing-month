@@ -22,6 +22,11 @@
     width: 218px;
     border-radius: 8px;
     margin: 0 auto 60px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #066C4C;
+  }
   }
 
   &__description {

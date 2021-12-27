@@ -8,7 +8,12 @@
     <meta name="keywords" content="шахматы, клуб, научиться шахматам" />
     <meta name="author" content="Максим Лебедев" />
     <title>Правильные шахматы</title>
+    <base href="/" />
     <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="./swiper-bundle.min.css"
+    />
   </head>
   <body class="page">
     <div class="page__container">
@@ -99,6 +104,26 @@
               <p class="team__bio">Шахматист, геймер.</p>
             </div>
           </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <img
+                src="./images/team/andrei.png"
+                alt="Андрей"
+                class="swiper-slide"
+              />
+              <img
+                src="./images/team/nikita.png"
+                alt="Никита"
+                class="swiper-slide"
+              />
+              <img
+              src="./images/team/alexey.png"
+              alt="Алексей"
+              class="swiper-slide"
+            />
+            </div>
+          <div class="swiper-pagination"></div>
+        </div>
         </section>
         <section class="join">
           <h2 class="join__title">Хочешь в&nbsp;комаду?</h2>
@@ -223,5 +248,7 @@
         </form>
       </div>
     </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

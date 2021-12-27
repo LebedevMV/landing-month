@@ -18,6 +18,10 @@
     &-arrow {
       margin: 0 0 0 13px;
     }
+
+    &:hover {
+    opacity: 0.8;
+  }
   }
 
   &__register {
@@ -30,5 +34,10 @@
     width: 218px;
     border-radius: 8px;
     margin: 0 0 0 50px;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #066C4C;
+  }
   }
 }
