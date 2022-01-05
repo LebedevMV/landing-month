@@ -12,9 +12,12 @@
   -moz-appearance: none;
   appearance: none;
   text-rendering: optimizeLegibility;
+  max-width: 100%;
+  overflow-x: hidden;
 
   &__container {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
   }
 }

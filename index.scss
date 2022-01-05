@@ -1,6 +1,6 @@
-@import "./vendor/_normalize.scss";
+@import "./vendor/normalize";
+@import "./vendor/fonts/fonts";
 @import "./_variables.scss";
-@import "./vendor/fonts/fonts.css";
 @import "./_mixins.scss";
 @import "./scss/blocks/_page.scss";
 @import "./scss/blocks/_header.scss";
