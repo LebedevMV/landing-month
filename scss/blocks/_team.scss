@@ -1,0 +1,79 @@
+.team {
+  background-color: $base-color-light;
+  padding: 0 calc((100% - 1120px) / 2) 80px;
+  margin: 0 auto;
+  overflow: auto;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1150px) {
+    & {
+      padding: 0 0 50px 50px;
+    }
+  }
+
+  &__title {
+    @include font-title();
+    max-width: 476px;
+    margin: 80px 0 40px;
+
+    @media screen and (max-width: 1150px) {
+      & {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  &__description {
+    @include font-description ();
+    max-width: 500px;
+    margin: 0 0 140px;
+  }
+  
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px; 
+    margin: 0;
+    overflow: scroll;
+    position: relative;
+    z-index: 1000;
+
+    @media screen and (max-width: 1150px) {
+      & {
+        grid-gap: 28px; 
+      }
+    }
+  }
+
+  &__card {
+    max-width: 320px;
+    margin: 0;
+    position: relative;
+    z-index: 1100;
+
+  }
+
+  &__name {
+    @include font-base ();
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: uppercase;
+    letter-spacing: 0.055em;
+    max-width: 320px;
+    margin: 30px 0 10px;
+  }
+
+  &__bio {
+    max-width: 320px;
+    margin: 0;
+    @include font-base ();
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+}
+
+.swiper {
+  display: none;
+}
