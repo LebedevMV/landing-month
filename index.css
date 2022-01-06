@@ -402,16 +402,16 @@
     text-align: center;
   }
 }
-
-.swiper {
+.team .swiper {
   display: none;
+  min-height: 382px;
 }
 @media screen and (max-width: 700px) {
-  .swiper {
+  .team .swiper {
     display: block;
   }
 }
-.swiper .swiper-image {
+.team .swiper .swiper-image {
   width: 280px;
   height: 280px;
   -o-object-fit: cover;
@@ -669,15 +669,16 @@
 }
 .battles .swiper {
   display: none;
+  min-height: 318px;
 }
 @media screen and (max-width: 700px) {
   .battles .swiper {
     display: block;
   }
 }
-.battles__image {
-  width: 320px;
-  height: 320px;
+.battles .swiper .swiper-image {
+  width: 280px;
+  height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
 }

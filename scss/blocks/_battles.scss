@@ -124,17 +124,18 @@
 
   .swiper {
     display: none;
-
+    min-height: 318px;
+  
     @media screen and (max-width: 700px) {
       & {
         display: block;
       }
     }
-  }
-
-  &__image {
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
+  
+    .swiper-image {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+    }
   }
 }

@@ -113,20 +113,21 @@
       }
     }
   }
-}
 
-.swiper {
-  display: none;
-
-  @media screen and (max-width: 700px) {
-    & {
-      display: block;
+  .swiper {
+    display: none;
+    min-height: 382px;
+  
+    @media screen and (max-width: 700px) {
+      & {
+        display: block;
+      }
     }
-  }
-
-  .swiper-image {
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
+  
+    .swiper-image {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+    }
   }
 }
