@@ -12,8 +12,20 @@
     }
   }
 
+  @media screen and (max-width: 700px) {
+    & {
+      padding: 0 20px;
+    }
+  }
+
   &__logo {
     margin: 80px auto 60px;
+
+    @media screen and (max-width: 700px) {
+      & {
+        margin: 40px auto;
+      }
+    }
   }
 
   &__register {
@@ -29,8 +41,19 @@
     cursor: pointer;
 
     &:hover {
-      background-color: #066C4C;
-  }
+      background-color: #066c4c;
+    }
+
+    @media screen and (max-width: 700px) {
+      & {
+        width: 140px;
+        height: 30px;
+        margin: 0 auto 40px;
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: 0.01em;;
+      }
+    }
   }
 
   &__description {
@@ -41,6 +64,15 @@
     line-height: 130%;
     text-align: center;
     margin: 0 auto 20px;
+
+    @media screen and (max-width: 700px) {
+      & {
+        font-size: 12px;
+        line-height: 130%;
+        max-width: 280px;
+        margin-bottom: 10px;
+      }
+    }
   }
 
   &__copyright {
@@ -51,5 +83,13 @@
     line-height: 20px;
     text-align: center;
     margin: 0 auto 60px;
+
+    @media screen and (max-width: 1150px) {
+      & {
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 40px;
+      }
+    }
   }
 }

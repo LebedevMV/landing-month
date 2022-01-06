@@ -1,6 +1,5 @@
 .intro {
   background-color: $base-color-dark;
-  max-width: 1120px;
   padding: 0 calc((100% - 1120px) / 2) 80px;
   margin: 0 auto;
   overflow: hidden;
@@ -9,6 +8,12 @@
   @media screen and (max-width: 1150px) {
     & {
       padding: 0 50px 50px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    & {
+      padding: 0 20px 20px;
     }
   }
 
@@ -21,17 +26,42 @@
     display: flex;
     align-items: center;
     text-transform: uppercase;
+
+    @media screen and (max-width: 700px) {
+      & {
+        width: 63px;
+        height: 40px;
+        margin-left: calc((100% - 280px) / 2);
+      }
+    }
   }
 
   &__tag-text {
     @include font-base();
     margin: 0 0 0 18px;
+
+    @media screen and (max-width: 700px) {
+      & {
+        font-size: 12px;
+        line-height: 90%;
+        margin: 0 0 0 14px;
+      }
+    }
   }
 
   &__title {
     @include font-title();
     max-width: 476px;
     margin: 70px 0 40px;
+
+    @media screen and (max-width: 700px) {
+      & {
+        font-size: 40px;
+        line-height: 90%;
+        max-width: 280px;
+        margin: 70px auto 40px;
+      }
+    }
   }
 
   &__description {
@@ -44,14 +74,32 @@
         margin: 0 0 212px;
       }
     }
+
+    @media screen and (max-width: 700px) {
+      & {
+        font-size: 12px;
+        line-height: 130%;
+        max-width: 280px;
+        margin: 0 auto 110px;
+      }
+    }
   }
 
   &__board {
     margin: 0;
     background-image: url("../../images/board.png");
     background-repeat: no-repeat;
+    background-size: contain;
     width: 416px;
     height: 104px;
+
+    @media screen and (max-width: 700px) {
+      & {
+        width: 280px;
+        height: 70px;
+        margin: 0 auto;
+      }
+    }
   }
 
   &__branding {
@@ -70,6 +118,16 @@
         height: 520px;
         right: -390px;
         top: 160px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      & {
+        background-image: url("../../images/chess_mobile.png");
+        width: 120px;
+        height: 60px;
+        right: calc((100% - 280px) / 2);
+        top: -1px;
       }
     }
   }
