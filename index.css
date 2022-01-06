@@ -31,12 +31,24 @@
   justify-content: space-between;
   align-items: center;
   margin: 28px auto 60px;
-  padding: 0 calc((100% - 1120px)/2);
+  padding: 0 calc((100% - 1120px) / 2);
   box-sizing: border-box;
 }
 @media screen and (max-width: 1150px) {
   .header {
     padding: 0 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header {
+    margin: 18px auto 50px;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__logo {
+    width: 26px;
+    height: 36px;
   }
 }
 .header__join {
@@ -64,6 +76,11 @@
     line-height: 125%;
     margin-left: 281px;
     width: 135px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__join {
+    display: none;
   }
 }
 .header__register {
@@ -94,10 +111,18 @@
     margin-left: 30px;
   }
 }
+@media screen and (max-width: 700px) {
+  .header__register {
+    margin-left: 114px;
+    height: 30px;
+    width: 140px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
 
 .intro {
   background-color: #000;
-  max-width: 1120px;
   padding: 0 calc((100% - 1120px) / 2) 80px;
   margin: 0 auto;
   overflow: hidden;
@@ -106,6 +131,11 @@
 @media screen and (max-width: 1150px) {
   .intro {
     padding: 0 50px 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .intro {
+    padding: 0 20px 20px;
   }
 }
 .intro__tag {
@@ -118,12 +148,26 @@
   align-items: center;
   text-transform: uppercase;
 }
+@media screen and (max-width: 700px) {
+  .intro__tag {
+    width: 63px;
+    height: 40px;
+    margin-left: calc((100% - 280px) / 2);
+  }
+}
 .intro__tag-text {
   font-family: "Noto Sans", Arial, sans-serif;
   font-weight: normal;
   color: #FFF;
   text-decoration: none;
   margin: 0 0 0 18px;
+}
+@media screen and (max-width: 700px) {
+  .intro__tag-text {
+    font-size: 12px;
+    line-height: 90%;
+    margin: 0 0 0 14px;
+  }
 }
 .intro__title {
   font-family: "Noto Sans", Arial, sans-serif;
@@ -136,6 +180,21 @@
   max-width: 476px;
   margin: 70px 0 40px;
 }
+@media screen and (max-width: 700px) {
+  .intro__title {
+    font-size: 40px;
+    line-height: 90%;
+    max-width: 280px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .intro__title {
+    font-size: 40px;
+    line-height: 90%;
+    max-width: 280px;
+    margin: 70px auto 40px;
+  }
+}
 .intro__description {
   font-family: "Noto Sans", Arial, sans-serif;
   color: #FFF;
@@ -147,17 +206,40 @@
   max-width: 500px;
   margin: 0 0 182px;
 }
+@media screen and (max-width: 700px) {
+  .intro__description {
+    font-size: 12px;
+    line-height: 130%;
+    max-width: 280px;
+  }
+}
 @media screen and (max-width: 1150px) {
   .intro__description {
     margin: 0 0 212px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .intro__description {
+    font-size: 12px;
+    line-height: 130%;
+    max-width: 280px;
+    margin: 0 auto 110px;
   }
 }
 .intro__board {
   margin: 0;
   background-image: url("../../images/board.png");
   background-repeat: no-repeat;
+  background-size: contain;
   width: 416px;
   height: 104px;
+}
+@media screen and (max-width: 700px) {
+  .intro__board {
+    width: 280px;
+    height: 70px;
+    margin: 0 auto;
+  }
 }
 .intro__branding {
   background-image: url("../../images/chess_desctop.png");
@@ -177,6 +259,15 @@
     top: 160px;
   }
 }
+@media screen and (max-width: 700px) {
+  .intro__branding {
+    background-image: url("../../images/chess_mobile.png");
+    width: 120px;
+    height: 60px;
+    right: calc((100% - 280px) / 2);
+    top: -1px;
+  }
+}
 
 .team {
   background-color: #5036E6;
@@ -190,6 +281,11 @@
     padding: 0 0 50px 50px;
   }
 }
+@media screen and (max-width: 700px) {
+  .team {
+    padding: 0 20px 40px;
+  }
+}
 .team__title {
   font-family: "Noto Sans", Arial, sans-serif;
   color: #FFF;
@@ -201,9 +297,21 @@
   max-width: 476px;
   margin: 80px 0 40px;
 }
+@media screen and (max-width: 700px) {
+  .team__title {
+    font-size: 40px;
+    line-height: 90%;
+    max-width: 280px;
+  }
+}
 @media screen and (max-width: 1150px) {
   .team__title {
     margin-top: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .team__title {
+    margin: 20px auto;
   }
 }
 .team__description {
@@ -217,6 +325,18 @@
   max-width: 500px;
   margin: 0 0 140px;
 }
+@media screen and (max-width: 700px) {
+  .team__description {
+    font-size: 12px;
+    line-height: 130%;
+    max-width: 280px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .team__description {
+    margin: 0 auto 60px;
+  }
+}
 .team__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -229,6 +349,11 @@
 @media screen and (max-width: 1150px) {
   .team__cards {
     grid-gap: 28px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .team__cards {
+    display: none;
   }
 }
 .team__card {
@@ -250,6 +375,15 @@
   max-width: 320px;
   margin: 30px 0 10px;
 }
+@media screen and (max-width: 700px) {
+  .team__name {
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.055em;
+    margin: 20px 0 5px;
+  }
+}
 .team__bio {
   max-width: 320px;
   margin: 0;
@@ -261,9 +395,27 @@
   font-weight: 400;
   line-height: 130%;
 }
+@media screen and (max-width: 700px) {
+  .team__bio {
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+  }
+}
 
 .swiper {
   display: none;
+}
+@media screen and (max-width: 700px) {
+  .swiper {
+    display: block;
+  }
+}
+.swiper .swiper-image {
+  width: 280px;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .join {
@@ -285,6 +437,12 @@
     min-height: 460px;
   }
 }
+@media screen and (max-width: 700px) {
+  .join {
+    padding: 0 20px;
+    min-height: 330px;
+  }
+}
 .join__title {
   font-family: "Noto Sans", Arial, sans-serif;
   color: #FFF;
@@ -296,10 +454,21 @@
   max-width: 520px;
   margin: 171px 0 40px;
 }
+@media screen and (max-width: 700px) {
+  .join__title {
+    font-size: 40px;
+    line-height: 90%;
+    max-width: 280px;
+  }
+}
 @media screen and (max-width: 1150px) {
   .join__title {
     margin-top: 121px;
-    max-width: 478px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .join__title {
+    margin: 20px auto 20px;
   }
 }
 .join__description {
@@ -313,14 +482,29 @@
   max-width: 520px;
   margin: 0 0 171px;
 }
+@media screen and (max-width: 700px) {
+  .join__description {
+    font-size: 12px;
+    line-height: 130%;
+    max-width: 280px;
+  }
+}
 @media screen and (max-width: 1150px) {
   .join__description {
     margin-bottom: 121px;
     max-width: 478px;
   }
 }
+@media screen and (max-width: 700px) {
+  .join__description {
+    margin: 0 auto 60px;
+    max-width: 280px;
+  }
+}
 .join__branding {
   background-image: url("../../images/team-invite-desctop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 720px;
   height: 360px;
   background-repeat: no-repeat;
@@ -329,13 +513,20 @@
   top: 50px;
   left: -360px;
 }
+@media screen and (max-width: 700px) {
+  .join__branding {
+    background-image: url("../../images/battles_mobile.png");
+    width: 280px;
+    height: 140px;
+    position: static;
+    margin: 0 auto;
+  }
+}
 
 .battles {
   background-color: #000;
-  max-width: 1120px;
   padding: 0 calc((100% - 1120px) / 2) 80px;
-  margin: 2px 0 auto;
-  box-shadow: 0 2px 0 #fff;
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -343,6 +534,12 @@
 @media screen and (max-width: 1150px) {
   .battles {
     padding: 0 0 50px 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .battles {
+    margin-top: 0;
+    padding: 0 20px 20px;
   }
 }
 .battles__title {
@@ -356,9 +553,22 @@
   max-width: 476px;
   margin: 70px 0 40px;
 }
+@media screen and (max-width: 700px) {
+  .battles__title {
+    font-size: 40px;
+    line-height: 90%;
+    max-width: 280px;
+  }
+}
 @media screen and (max-width: 1150px) {
   .battles__title {
     margin-top: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .battles__title {
+    margin: 20px auto;
+    width: 280px;
   }
 }
 .battles__description {
@@ -372,9 +582,22 @@
   max-width: 500px;
   margin: 0 0 110px;
 }
+@media screen and (max-width: 700px) {
+  .battles__description {
+    font-size: 12px;
+    line-height: 130%;
+    max-width: 280px;
+  }
+}
 @media screen and (max-width: 1150px) {
   .battles__description {
     margin-bottom: 140px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .battles__description {
+    margin: 0 auto 60px;
+    width: 280px;
   }
 }
 .battles__gallery {
@@ -389,6 +612,11 @@
     grid-gap: 28px;
   }
 }
+@media screen and (max-width: 700px) {
+  .battles__gallery {
+    display: none;
+  }
+}
 .battles__image {
   width: 320px;
   height: 320px;
@@ -401,10 +629,18 @@
   background-repeat: no-repeat;
   width: 416px;
   height: 104px;
+  background-size: cover;
 }
 @media screen and (max-width: 1150px) {
   .battles__board {
     margin: 140px 0 0 calc(100% - 463px);
+  }
+}
+@media screen and (max-width: 1150px) and (max-width: 700px) {
+  .battles__board {
+    margin: 60px auto 0;
+    width: 280px;
+    height: 70px;
   }
 }
 .battles__branding {
@@ -415,6 +651,25 @@
   position: absolute;
   bottom: 0;
   left: -220px;
+}
+@media screen and (max-width: 700px) {
+  .battles__branding {
+    display: none;
+  }
+}
+.battles .swiper {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .battles .swiper {
+    display: block;
+  }
+}
+.battles__image {
+  width: 320px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {
@@ -430,8 +685,18 @@
     padding: 0 50px;
   }
 }
+@media screen and (max-width: 700px) {
+  .footer {
+    padding: 0 20px;
+  }
+}
 .footer__logo {
   margin: 80px auto 60px;
+}
+@media screen and (max-width: 700px) {
+  .footer__logo {
+    margin: 40px auto;
+  }
 }
 .footer__register {
   font-family: "Noto Sans", Arial, sans-serif;
@@ -449,7 +714,17 @@
   cursor: pointer;
 }
 .footer__register:hover {
-  background-color: #066C4C;
+  background-color: #066c4c;
+}
+@media screen and (max-width: 700px) {
+  .footer__register {
+    width: 140px;
+    height: 30px;
+    margin: 0 auto 40px;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+  }
 }
 .footer__description {
   font-family: "Noto Sans", Arial, sans-serif;
@@ -463,6 +738,14 @@
   text-align: center;
   margin: 0 auto 20px;
 }
+@media screen and (max-width: 700px) {
+  .footer__description {
+    font-size: 12px;
+    line-height: 130%;
+    max-width: 280px;
+    margin-bottom: 10px;
+  }
+}
 .footer__copyright {
   font-family: "Noto Sans", Arial, sans-serif;
   font-weight: normal;
@@ -474,6 +757,13 @@
   line-height: 20px;
   text-align: center;
   margin: 0 auto 60px;
+}
+@media screen and (max-width: 1150px) {
+  .footer__copyright {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 40px;
+  }
 }
 
 .pop-up {

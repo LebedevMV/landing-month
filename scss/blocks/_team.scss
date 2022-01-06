@@ -11,6 +11,12 @@
     }
   }
 
+  @media screen and (max-width: 700px) {
+    & {
+      padding: 0 20px 40px;
+    }
+  }
+
   &__title {
     @include font-title();
     max-width: 476px;
@@ -21,18 +27,30 @@
         margin-top: 50px;
       }
     }
+
+    @media screen and (max-width: 700px) {
+      & {
+        margin: 20px auto;
+      }
+    }
   }
 
   &__description {
-    @include font-description ();
+    @include font-description();
     max-width: 500px;
     margin: 0 0 140px;
+
+    @media screen and (max-width: 700px) {
+      & {
+        margin: 0 auto 60px;
+      }
+    }
   }
-  
+
   &__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 80px; 
+    grid-gap: 80px;
     margin: 0;
     overflow: scroll;
     position: relative;
@@ -40,7 +58,13 @@
 
     @media screen and (max-width: 1150px) {
       & {
-        grid-gap: 28px; 
+        grid-gap: 28px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      & {
+        display: none;
       }
     }
   }
@@ -50,11 +74,10 @@
     margin: 0;
     position: relative;
     z-index: 1100;
-
   }
 
   &__name {
-    @include font-base ();
+    @include font-base();
     font-size: 22px;
     font-weight: 400;
     line-height: 130%;
@@ -62,18 +85,48 @@
     letter-spacing: 0.055em;
     max-width: 320px;
     margin: 30px 0 10px;
+
+    @media screen and (max-width: 700px) {
+      & {
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.055em;
+        margin: 20px 0 5px;
+      }
+    }
   }
 
   &__bio {
     max-width: 320px;
     margin: 0;
-    @include font-base ();
+    @include font-base();
     font-size: 20px;
     font-weight: 400;
     line-height: 130%;
+
+    @media screen and (max-width: 700px) {
+      & {
+        font-size: 12px;
+        line-height: 130%;
+        text-align: center;
+      }
+    }
   }
 }
 
 .swiper {
   display: none;
+
+  @media screen and (max-width: 700px) {
+    & {
+      display: block;
+    }
+  }
+
+  .swiper-image {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+  }
 }

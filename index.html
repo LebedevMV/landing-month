@@ -10,10 +10,7 @@
     <title>Правильные шахматы</title>
     <base href="/" />
     <link rel="stylesheet" type="text/css" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="./swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css" />
   </head>
   <body class="page">
     <div class="page__container">
@@ -72,8 +69,8 @@
         <section class="team">
           <h2 class="team__title">Наша команда</h2>
           <p class="team__description">
-            Приходите к нам, играть в шахматы! Сразитесь классическом поединке,
-            блиц состязании и бою с гройсмейстером.
+            Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с
+            ними играть — одно удовольствие!
           </p>
           <div class="team__cards">
             <div class="team__card">
@@ -106,24 +103,36 @@
           </div>
           <div class="swiper">
             <div class="swiper-wrapper">
-              <img
-                src="./images/team/andrei.png"
-                alt="Андрей"
-                class="swiper-slide"
-              />
-              <img
-                src="./images/team/nikita.png"
-                alt="Никита"
-                class="swiper-slide"
-              />
-              <img
-              src="./images/team/alexey.png"
-              alt="Алексей"
-              class="swiper-slide"
-            />
+              <div class="swiper-slide">
+                <img
+                  src="./images/team/andrei.png"
+                  alt="Андрей"
+                  class="swiper-image"
+                />
+                <p class="team__name">Андрей</p>
+                <p class="team__bio">Шахматист, писатель.</p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/team/nikita.png"
+                  alt="Никита"
+                  class="swiper-slide"
+                />
+                <p class="team__name">Никита</p>
+                <p class="team__bio">Шахматист, кулинар.</p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/team/alexey.png"
+                  alt="Алексей"
+                  class="swiper-slide"
+                />
+                <p class="team__name">Алексей</p>
+                <p class="team__bio">Шахматист, геймер.</p>
+              </div>
             </div>
-          <div class="swiper-pagination"></div>
-        </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </section>
         <section class="join">
           <h2 class="join__title">Хочешь в&nbsp;комаду?</h2>
@@ -154,6 +163,32 @@
               alt="Шахматы. Фото 3"
               class="battles__image"
             />
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                src="./images/photos/1.png"
+                alt="Шахматы. Фото 1"
+                class="swiper-image"
+              />
+              </div>
+              <div class="swiper-slide">
+                <img
+                src="./images/photos/2.png"
+                alt="Шахматы. Фото 2"
+                class="swiper-image"
+              />
+              </div>
+              <div class="swiper-slide">
+                <img
+                src="./images/photos/3.png"
+                alt="Шахматы. Фото 3"
+                class="swiper-image"
+              />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
           <div class="battles__board"></div>
           <div class="battles__branding"></div>

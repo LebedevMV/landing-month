@@ -18,6 +18,13 @@
     }
   }
 
+  @media screen and (max-width: 700px) {
+    & {
+      padding: 0 20px;
+      min-height: 330px;
+    }
+  }
+
   &__title {
     @include font-title();
     max-width: 520px;
@@ -26,7 +33,12 @@
     @media screen and (max-width: 1150px) {
       & {
         margin-top: 121px;
-        max-width: 478px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      & {
+        margin: 20px auto 20px;
       }
     }
   }
@@ -42,10 +54,19 @@
         max-width: 478px;
       }
     }
+
+    @media screen and (max-width: 700px) {
+      & {
+        margin: 0 auto 60px;
+        max-width: 280px;
+      }
+    }
   }
 
   &__branding {
     background-image: url("../../images/team-invite-desctop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 720px;
     height: 360px;
     background-repeat: no-repeat;
@@ -53,5 +74,15 @@
     position: absolute;
     top: 50px;
     left: -360px;
+
+    @media screen and (max-width: 700px) {
+      & {
+        background-image: url("../../images/battles_mobile.png");
+        width: 280px;
+        height: 140px;
+        position: static;
+        margin: 0 auto;
+      }
+    }
   }
 }
