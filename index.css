@@ -228,7 +228,7 @@
 }
 .intro__board {
   margin: 0;
-  background-image: url("../../images/board.png");
+  background-image: url("./images/board.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 416px;
@@ -242,7 +242,7 @@
   }
 }
 .intro__branding {
-  background-image: url("../../images/chess_desctop.png");
+  background-image: url("./images/chess_desctop.png");
   width: 640px;
   height: 640px;
   background-repeat: no-repeat;
@@ -261,7 +261,7 @@
 }
 @media screen and (max-width: 700px) {
   .intro__branding {
-    background-image: url("../../images/chess_mobile.png");
+    background-image: url("./images/chess_mobile.png");
     width: 120px;
     height: 60px;
     right: calc((100% - 280px) / 2);
@@ -452,7 +452,7 @@
   font-size: 70px;
   line-height: 90%;
   max-width: 520px;
-  margin: 171px 0 40px;
+  margin: 171px auto 40px 600px;
 }
 @media screen and (max-width: 700px) {
   .join__title {
@@ -461,14 +461,16 @@
     max-width: 280px;
   }
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1280px) {
   .join__title {
-    margin-top: 121px;
+    margin: 121px auto 40px 190px;
+    max-width: 478px;
   }
 }
 @media screen and (max-width: 700px) {
   .join__title {
     margin: 20px auto 20px;
+    max-width: 280px;
   }
 }
 .join__description {
@@ -489,9 +491,9 @@
     max-width: 280px;
   }
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1280px) {
   .join__description {
-    margin-bottom: 121px;
+    margin: 0 auto 121px 190px;
     max-width: 478px;
   }
 }
@@ -502,20 +504,28 @@
   }
 }
 .join__branding {
-  background-image: url("../../images/team-invite-desctop.png");
+  background-image: url("./images/team-invite-desctop.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 720px;
-  height: 360px;
+  width: 660px;
+  height: 440px;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 50px;
-  left: -360px;
+  top: 60px;
+  left: 0;
+}
+@media screen and (max-width: 1280px) {
+  .join__branding {
+    top: 50px;
+    left: -360px;
+    width: 720px;
+    height: 360px;
+  }
 }
 @media screen and (max-width: 700px) {
   .join__branding {
-    background-image: url("../../images/battles_mobile.png");
+    background-image: url("./images/battles_mobile.png");
     width: 280px;
     height: 140px;
     position: static;
@@ -625,7 +635,7 @@
 }
 .battles__board {
   margin: 110px 0 0 calc(100% - 416px);
-  background-image: url("../../images/board-green.png");
+  background-image: url("./images/board-green.png");
   background-repeat: no-repeat;
   width: 416px;
   height: 104px;
@@ -644,7 +654,7 @@
   }
 }
 .battles__branding {
-  background-image: url("../../images/battles-desctop.png");
+  background-image: url("./images/battles-desctop.png");
   width: 440px;
   height: 220px;
   background-repeat: no-repeat;
@@ -809,6 +819,12 @@
   font-size: 34px;
   line-height: 90%;
 }
+@media screen and (max-width: 700px) {
+  .pop-up__title {
+    font-size: 30px;
+    line-height: 90%;
+  }
+}
 .pop-up__main-container {
   display: flex;
   flex-direction: column;
@@ -818,11 +834,20 @@
   border: none;
   display: flex;
   flex-direction: column;
-  margin: 0 auto 253px;
   padding: 0;
 }
+@media screen and (max-width: 1100px) {
+  .pop-up__input-container {
+    margin: 0 auto 243px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pop-up__input-container {
+    margin: 0 auto 143px;
+  }
+}
 .pop-up__item {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   border: none;
   border-radius: 8px;
   height: 48px;
@@ -830,31 +855,40 @@
   margin: 0;
   padding: 15px 28px;
   box-sizing: border-box;
-  color: #FFF;
+  color: #fff;
 }
 .pop-up__item::-moz-placeholder {
-  color: #FFF;
+  color: #fff;
 }
 .pop-up__item:-ms-input-placeholder {
-  color: #FFF;
+  color: #fff;
 }
 .pop-up__item::placeholder {
-  color: #FFF;
+  color: #fff;
 }
 .pop-up__item::-ms-input-placeholder {
-  color: #FFF;
+  color: #fff;
 }
 .pop-up__item:hover {
   background-color: rgba(26, 26, 26, 0.6);
 }
 .pop-up__item:focus {
   background-color: rgba(26, 26, 26, 0.6);
-  border: 1px solid #5036E6;
+  border: 1px solid #5036e6;
   box-sizing: border-box;
   border-radius: 8px;
 }
 .pop-up__item_el_name {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 700px) {
+  .pop-up__item {
+    height: 42px;
+    width: 280px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+  }
 }
 .pop-up__submit {
   font-family: "Noto Sans", Arial, sans-serif;
@@ -872,5 +906,14 @@
   cursor: pointer;
 }
 .pop-up__submit:hover {
-  background-color: #066C4C;
+  background-color: #066c4c;
+}
+@media screen and (max-width: 700px) {
+  .pop-up__submit {
+    height: 30px;
+    width: 140px;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+  }
 }/*# sourceMappingURL=index.css.map */
