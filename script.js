@@ -22,6 +22,7 @@ function formSubmit(evt) {
 // Слушатели событий
 
 headerRegisterButton.addEventListener("click", popUpOpen)
+footerRegisterButton.addEventListener("click", popUpOpen)
 popUpCloseButton.addEventListener("click", popUpClose)
 form.addEventListener("submit", formSubmit)
 
