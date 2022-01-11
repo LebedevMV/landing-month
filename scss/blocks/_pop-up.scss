@@ -10,6 +10,7 @@
   align-items: center;
   opacity: 100;
   display: flex;
+  z-index: 1000;
 
   &_is-closed {
     display: none;
@@ -20,6 +21,10 @@
     right: 40px;
     top: 40px;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &__container {
@@ -29,10 +34,23 @@
     flex-direction: column;
     position: relative;
     margin: 120px auto;
+
+    @media screen and (max-width: 700px) {
+      & {
+        margin: 200px auto;
+      }
+    }
   }
 
   &__logo {
     margin: 0 auto 50px;
+
+    @media screen and (max-width: 700px) {
+      & {
+        width: 26px;
+        height: 36px;
+      }
+    }
   }
 
   &__title {

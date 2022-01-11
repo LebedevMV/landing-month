@@ -66,7 +66,7 @@
   }
 
   &__branding {
-    background-image: url("./images/team-invite-desctop.png");
+    background-image: url("../images/team-invite-desctop.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 660px;
@@ -88,7 +88,7 @@
 
     @media screen and (max-width: 700px) {
       & {
-        background-image: url("./images/battles_mobile.png");
+        background-image: url("../images/battles_mobile.png");
         width: 280px;
         height: 140px;
         position: static;

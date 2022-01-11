@@ -1,4 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "../vendor/normalize.css";
+@font-face {
+  src: url(../vendor/fonts/NotoSans-Regular.ttf) format("truetype");
+  font-family: "Noto Sans";
+  font-weight: normal;
+}
+@font-face {
+  src: url(../vendor/fonts/NotoSans-SemiBold.ttf) format("truetype");
+  font-family: "Noto Sans";
+  font-weight: 600;
+}
 .page {
   min-width: 320px;
   font-family: "Noto Sans", Arial, sans-serif;
@@ -23,6 +33,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  max-width: 1920px;
 }
 
 .header {
@@ -76,6 +87,11 @@
     line-height: 125%;
     margin-left: 281px;
     width: 135px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__join {
+    margin-left: 220px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -200,7 +216,7 @@
   color: #FFF;
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   line-height: 130%;
   max-width: 500px;
@@ -228,7 +244,7 @@
 }
 .intro__board {
   margin: 0;
-  background-image: url("./images/board.png");
+  background-image: url("../images/board.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 416px;
@@ -242,7 +258,7 @@
   }
 }
 .intro__branding {
-  background-image: url("./images/chess_desctop.png");
+  background-image: url("../images/chess_desctop.png");
   width: 640px;
   height: 640px;
   background-repeat: no-repeat;
@@ -261,7 +277,7 @@
 }
 @media screen and (max-width: 700px) {
   .intro__branding {
-    background-image: url("./images/chess_mobile.png");
+    background-image: url("../images/chess_mobile.png");
     width: 120px;
     height: 60px;
     right: calc((100% - 280px) / 2);
@@ -294,7 +310,7 @@
   font-weight: 600;
   font-size: 70px;
   line-height: 90%;
-  max-width: 476px;
+  max-width: 100%;
   margin: 80px 0 40px;
 }
 @media screen and (max-width: 700px) {
@@ -319,17 +335,22 @@
   color: #FFF;
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   line-height: 130%;
   max-width: 500px;
-  margin: 0 0 140px;
+  margin: 0 0 110px;
 }
 @media screen and (max-width: 700px) {
   .team__description {
     font-size: 12px;
     line-height: 130%;
     max-width: 280px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .team__description {
+    margin-bottom: 140px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -402,10 +423,12 @@
     text-align: center;
   }
 }
+
 .team .swiper {
   display: none;
   min-height: 382px;
 }
+
 @media screen and (max-width: 700px) {
   .team .swiper {
     display: block;
@@ -415,7 +438,24 @@
   width: 280px;
   height: 280px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+}
+
+.battles .swiper {
+  display: none;
+  min-height: 318px;
+}
+
+@media screen and (max-width: 700px) {
+  .battles .swiper {
+    display: block;
+  }
+}
+.battles .swiper .swiper-image {
+  width: 280px;
+  height: 280px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .join {
@@ -478,7 +518,7 @@
   color: #FFF;
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   line-height: 130%;
   max-width: 520px;
@@ -504,7 +544,7 @@
   }
 }
 .join__branding {
-  background-image: url("./images/team-invite-desctop.png");
+  background-image: url("../images/team-invite-desctop.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 660px;
@@ -525,7 +565,7 @@
 }
 @media screen and (max-width: 700px) {
   .join__branding {
-    background-image: url("./images/battles_mobile.png");
+    background-image: url("../images/battles_mobile.png");
     width: 280px;
     height: 140px;
     position: static;
@@ -543,7 +583,7 @@
 }
 @media screen and (max-width: 1150px) {
   .battles {
-    padding: 0 0 50px 50px;
+    padding: 0 0 80px 50px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -586,7 +626,7 @@
   color: #FFF;
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   line-height: 130%;
   max-width: 500px;
@@ -635,7 +675,7 @@
 }
 .battles__board {
   margin: 110px 0 0 calc(100% - 416px);
-  background-image: url("./images/board-green.png");
+  background-image: url("../images/board-green.png");
   background-repeat: no-repeat;
   width: 416px;
   height: 104px;
@@ -654,33 +694,23 @@
   }
 }
 .battles__branding {
-  background-image: url("./images/battles-desctop.png");
+  background-image: url("../images/battles-desctop.png");
   width: 440px;
   height: 220px;
   background-repeat: no-repeat;
   position: absolute;
   bottom: 0;
-  left: -220px;
+  left: 100px;
+}
+@media screen and (max-width: 1150px) {
+  .battles__branding {
+    left: -220px;
+  }
 }
 @media screen and (max-width: 700px) {
   .battles__branding {
     display: none;
   }
-}
-.battles .swiper {
-  display: none;
-  min-height: 318px;
-}
-@media screen and (max-width: 700px) {
-  .battles .swiper {
-    display: block;
-  }
-}
-.battles .swiper .swiper-image {
-  width: 280px;
-  height: 280px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .footer {
@@ -689,7 +719,6 @@
   flex-direction: column;
   align-items: center;
   padding: 0 calc((100% - 1120px) / 2);
-  box-shadow: 0 2px 0 #fff;
 }
 @media screen and (max-width: 1150px) {
   .footer {
@@ -723,6 +752,8 @@
   border-radius: 8px;
   margin: 0 auto 60px;
   cursor: pointer;
+  font-size: 15px;
+  line-height: 18px;
 }
 .footer__register:hover {
   background-color: #066c4c;
@@ -767,12 +798,19 @@
   font-size: 15.1px;
   line-height: 20px;
   text-align: center;
-  margin: 0 auto 60px;
+  margin: 0 auto 80px;
 }
 @media screen and (max-width: 1150px) {
   .footer__copyright {
+    font-size: 15.1px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer__copyright {
     font-size: 12px;
     line-height: 12px;
+    max-width: 280px;
     margin-bottom: 40px;
   }
 }
@@ -789,6 +827,7 @@
   align-items: center;
   opacity: 100;
   display: flex;
+  z-index: 1000;
 }
 .pop-up_is-closed {
   display: none;
@@ -799,6 +838,9 @@
   top: 40px;
   cursor: pointer;
 }
+.pop-up__close:hover {
+  opacity: 0.6;
+}
 .pop-up__container {
   max-width: 500px;
   width: 100%;
@@ -807,8 +849,19 @@
   position: relative;
   margin: 120px auto;
 }
+@media screen and (max-width: 700px) {
+  .pop-up__container {
+    margin: 200px auto;
+  }
+}
 .pop-up__logo {
   margin: 0 auto 50px;
+}
+@media screen and (max-width: 700px) {
+  .pop-up__logo {
+    width: 26px;
+    height: 36px;
+  }
 }
 .pop-up__title {
   margin: 0 auto 78px;
