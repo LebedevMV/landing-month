@@ -82,6 +82,12 @@
     z-index: 1100;
   }
 
+  &__photo {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+  }
+
   &__name {
     @include font-base();
     font-size: 22px;

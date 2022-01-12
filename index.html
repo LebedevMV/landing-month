@@ -9,7 +9,11 @@
     <meta name="author" content="Максим Лебедев" />
     <title>Правильные шахматы</title>
     <link rel="stylesheet" type="text/css" href="./pages/index.css" />
-    <link rel="stylesheet" type="text/css" href="./vendor/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./vendor/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body class="page">
     <div class="page__container">
@@ -167,24 +171,24 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
-                src="./images/photos/1.png"
-                alt="Шахматы. Фото 1"
-                class="swiper-image"
-              />
+                  src="./images/photos/1.png"
+                  alt="Шахматы. Фото 1"
+                  class="swiper-image"
+                />
               </div>
               <div class="swiper-slide">
                 <img
-                src="./images/photos/2.png"
-                alt="Шахматы. Фото 2"
-                class="swiper-image"
-              />
+                  src="./images/photos/2.png"
+                  alt="Шахматы. Фото 2"
+                  class="swiper-image"
+                />
               </div>
               <div class="swiper-slide">
                 <img
-                src="./images/photos/3.png"
-                alt="Шахматы. Фото 3"
-                class="swiper-image"
-              />
+                  src="./images/photos/3.png"
+                  alt="Шахматы. Фото 3"
+                  class="swiper-image"
+                />
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -223,19 +227,7 @@
       </footer>
     </div>
     <div class="pop-up pop-up_is-closed" id="register">
-      <svg
-        width="33"
-        height="33"
-        viewBox="0 0 33 33"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="pop-up__close"
-      >
-        <path
-          d="M32.7905 29.5903L19.9905 16.7903L32.7905 3.99028L29.5905 0.790283L16.7905 13.5903L3.99053 0.790283L0.790527 3.99028L13.5905 16.7903L0.790527 29.5903L3.99053 32.7903L16.7905 19.9903L29.5905 32.7903L32.7905 29.5903Z"
-          fill="white"
-        />
-      </svg>
+      <button type="button" class="pop-up__close"></button>
       <div class="pop-up__container">
         <svg
           class="pop-up__logo"
@@ -267,6 +259,7 @@
               id="name"
               type="text"
               placeholder="Имя"
+              required
             />
             <input
               class="pop-up__item pop-up__item_el_email"
@@ -274,6 +267,7 @@
               id="email"
               type="text"
               placeholder="Email"
+              required
             />
           </fieldset>
           <button class="pop-up__submit" type="submit">

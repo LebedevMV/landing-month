@@ -383,6 +383,12 @@
   position: relative;
   z-index: 1100;
 }
+.team__photo {
+  width: 320px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .team__name {
   font-family: "Noto Sans", Arial, sans-serif;
   font-weight: normal;
@@ -837,6 +843,12 @@
   right: 40px;
   top: 40px;
   cursor: pointer;
+  background-image: url("../images/close.png");
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
 }
 .pop-up__close:hover {
   opacity: 0.6;
@@ -934,7 +946,12 @@
   border-radius: 8px;
 }
 .pop-up__item_el_name {
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+}
+@media screen and (max-width: 700px) {
+  .pop-up__item_el_name {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 700px) {
   .pop-up__item {

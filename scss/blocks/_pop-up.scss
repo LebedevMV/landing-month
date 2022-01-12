@@ -21,6 +21,12 @@
     right: 40px;
     top: 40px;
     cursor: pointer;
+    background-image: url("../images/close.png");
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
 
     &:hover {
       opacity: 0.6;
@@ -125,7 +131,13 @@
     }
 
     &_el_name {
-      margin-bottom: 20px;
+      margin: 0 0 20px;
+
+      @media screen and (max-width: 700px) {
+        & {
+          margin-bottom: 10px;
+        }
+      }
     }
 
     @media screen and (max-width: 700px) {
